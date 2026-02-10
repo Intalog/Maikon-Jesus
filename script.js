@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Lógica para o Modal do Pix - COMENTADA
     /*
     const pixModal = document.getElementById('pixModal');
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Lógica para salvar contato (VCF) - PERMANECE ATIVA
     const saveContactButton = document.getElementById('saveContact');
-    
+
     // Verificar se o botão de salvar contato existe
     if (saveContactButton) {
-        saveContactButton.addEventListener('click', function() {
+        saveContactButton.addEventListener('click', function () {
             const firstName = "Sabrina"; // Nome
             const lastName = "Oliveira"; // Sobrenome
             const tel = "+5521996800387"; // Telefone
