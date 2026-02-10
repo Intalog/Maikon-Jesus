@@ -1,0 +1,369 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Tema claro e clean: fundo quase branco ou cinza muito claro */
+    background-color: #f8f8f8; /* Fundo branco off-white */
+    /* Se quiser um gradiente sutil claro, use: */
+    /* background: linear-gradient(135deg, #f0f2f5 0%, #ffffff 100%); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333; /* Texto escuro para contraste no fundo claro */
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px; /* Espaçamento ajustado */
+    padding: 20px; /* Padding ajustado */
+    background-color: #ffffff; /* Fundo branco sólido */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    color: #333; /* Texto escuro no cabeçalho */
+    width: 60%; /* Define a largura do header como 60% da página */
+    max-width: 320px; /* Largura máxima do header, para não ficar muito largo em telas grandes */
+    border-radius: 10px; /* Bordas suaves */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave e sutil */
+}
+
+.profile-pic-container {
+    width: 100px; /* Um pouco menor */
+    height: 100px; /* Um pouco menor */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 12px auto; /* Espaçamento ajustado */
+    border: 3px solid #f0f0f0; /* Borda mais fina e clara */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 6px 0 3px 0; /* Espaçamento e tamanho ajustados */
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #2c3e50; /* Cor de título mais profissional */
+}
+
+p {
+    margin: 0;
+    font-size: 0.95em; /* Fonte ajustada */
+    opacity: 0.85; /* Opacidade sutil */
+    color: #666; /* Cor de texto secundário */
+}
+
+.logo-container {
+    margin-top: 20px; /* Espaço acima do logo */
+    margin-bottom: 15px; /* Espaço abaixo do logo antes dos botões */
+    text-align: center; /* Centraliza o logo se ele for inline ou tiver width menor */
+    background-color: #4169E1; /* Fundo Azul Royal */
+    border-radius: 10px; /* Borda arredondada igual aos demais */
+    padding: 10px; /* Adiciona um padding interno para o logo não encostar nas bordas da div */
+    width: 60%; /* Ocupa 60% da largura, igual ao header/botões */
+    max-width: 320px; /* Mesma largura máxima dos demais elementos */
+    box-sizing: border-box; /* Garante que padding seja incluído na largura */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra consistente */
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.company-logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+    filter: brightness(1.2);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px; /* Largura máxima do container de botões, igual ao header para alinhamento */
+    padding-top: 10px;
+    align-items: center; /* Centralizar os botões horizontalmente */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza ícone e texto no botão */
+    padding: 10px 15px;
+    border-radius: 8px; /* Bordas mais suaves */
+    text-align: center; /* Alinha o texto centralmente dentro do botão */
+    text-decoration: none;
+    font-size: 0.95em; /* Tamanho da fonte dos botões */
+    font-weight: 500; /* Mais leve */
+    transition: all 0.2s ease; /* Transição mais rápida */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Sombra muito sutil */
+    color: #333; /* Cor do texto padrão dos botões */
+    border: 1px solid #e0e0e0; /* Borda sutil nos botões */
+    cursor: pointer;
+    background-color: #ffffff; /* Fundo branco padrão para botões */
+    width: 60%; /* Define a largura do botão como 60% do .button-container */
+    box-sizing: border-box; /* Garante que padding e borda sejam incluídos na largura total */
+}
+
+.button i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 1em; /* Tamanho do ícone ajustado */
+    color: #555; /* Cor do ícone padrão */
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    background-color: #f5f5f5;
+}
+
+/* Cores dos botões - agora com tons mais claros e profissionais, ou mantendo a identidade visual da marca */
+.whatsapp-button {
+    background-color: #e6ffe6; /* Verde claro */
+    color: #25d366; /* Texto verde WhatsApp */
+    border-color: #c0f0c0;
+}
+.whatsapp-button i { color: #25d366; }
+.whatsapp-button:hover {
+    background-color: #d0f0d0;
+    transform: translateY(-2px);
+}
+
+.primary-button {
+    background-color: #e0f2ff; /* Azul claro */
+    color: #007bff; /* Texto azul primário */
+    border-color: #cceeff;
+}
+.primary-button i { color: #007bff; }
+.primary-button:hover {
+    background-color: #cce0f0;
+    transform: translateY(-2px);
+}
+
+/* Nova regra para o botão de Email */
+.email-button {
+    background-color: #ffe0e0; /* Vermelho pastel bem claro */
+    color: #cc3333; /* Texto vermelho mais escuro */
+    border-color: #ffc0c0; /* Borda vermelho pastel */
+}
+.email-button i {
+    color: #cc3333; /* Ícone vermelho mais escuro */
+}
+.email-button:hover {
+    background-color: #f5d0d0; /* Tom mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+.social-button.linkedin {
+    background-color: #e0f7fa; /* Azul claro */
+    color: #0e76a8; /* Texto azul LinkedIn */
+    border-color: #b3e6f2;
+}
+.social-button.linkedin i { color: #0e76a8; }
+.social-button.linkedin:hover {
+    background-color: #c0e0e8;
+    transform: translateY(-2px);
+}
+
+.social-button.instagram {
+    background: linear-gradient(45deg, #ffe0f0, #ffe0b2); /* Gradiente de tons quentes claros */
+    color: #cc2366; /* Cor do texto que se destaca no gradiente */
+    border: 1px solid #f0d0e0;
+}
+.social-button.instagram i { color: #cc2366; }
+.social-button.instagram:hover {
+    background: linear-gradient(45deg, #f5c0e0, #f5d0a0);
+    transform: translateY(-2px);
+}
+
+.social-button.github {
+    background-color: #eeeeee; /* Cinza claro */
+    color: #333; /* Texto escuro */
+    border-color: #d0d0d0;
+}
+.social-button.github i { color: #333; }
+.social-button.github:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+.pix-button {
+    background-color: #eafbe6; /* Verde Pix claro */
+    color: #2ab759; /* Texto verde Pix */
+    border-color: #d0edd0;
+}
+.pix-button i { color: #2ab759; }
+.pix-button:hover {
+    background-color: #d0edd0;
+    transform: translateY(-2px);
+}
+
+.save-contact-button {
+    background-color: #f0f0f0; /* Cinza claro */
+    color: #6c757d; /* Texto cinza */
+    border-color: #e0e0e0;
+}
+.save-contact-button i { color: #6c757d; }
+.save-contact-button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Estilos do Modal para QR Code Pix */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255,255,255,0.8); /* Fundo branco semi-transparente */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px); /* Efeito de desfoque sutil */
+    padding: 20px; /* Adicionando um padding ao redor do modal para criar espaço nas bordas da tela */
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura total */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%; /* Vamos manter a largura em 90% para telas menores */
+    max-width: 350px; /* Aumentando um pouco a largura máxima para dar mais espaço interno */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* Sombra mais leve */
+    color: #333;
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    margin: 0 auto; /* Isso garante que o modal continue centralizado horizontalmente */
+}
+
+.close-button {
+    color: #999;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.close-button:hover,
+.close-button:focus {
+    color: #555;
+}
+
+.pix-qr-img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin: 15px 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.copy-button {
+    background-color: #d4edda; /* Verde claro para o botão copiar */
+    color: #28a745;
+    border: 1px solid #c3e6cb;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-left: 8px;
+    transition: background-color 0.3s ease;
+}
+.copy-button:hover {
+    background-color: #c3e6cb;
+}
+
+/* ESTILO DO RODAPÉ COM COPYRIGHT */
+.footer {
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center;
+    font-size: 0.8em;
+    color: #6c757d; /* Um cinza sutil */
+    width: 100%; /* Ocupa a largura total para alinhamento */
+    max-width: 320px; /* Limita a largura do texto do rodapé */
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .button-container,
+    .modal-content {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .profile-header {
+        width: calc(100% - 30px);
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* Ajuste para o logo em mobile */
+    .company-logo {
+        max-width: 120px;
+    }
+    .logo-container { /* Ajuste para o container do logo em mobile */
+        width: calc(100% - 30px); /* Mesma largura que o header em mobile */
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px; /* Ajusta padding para mobile */
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 9px 12px;
+        font-size: 0.9em;
+        width: 80%;
+    }
+
+    .button i {
+        font-size: 1.1em;
+        margin-right: 8px;
+    }
+
+    .profile-pic-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+
+    /* Ajuste para o rodapé em mobile */
+    .footer {
+        width: 100%; /* Ocupa a largura total */
+        max-width: none; /* Não tem largura máxima em mobile */
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+}
