@@ -30,6 +30,40 @@ body {
     max-width: 320px; /* Largura máxima do header, para não ficar muito largo em telas grandes */
     border-radius: 10px; /* Bordas suaves */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave e sutil */
+    position: relative; /* Necessário para posicionar o botão de compartilhamento */
+}
+
+.share-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #6c757d;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.share-button:hover {
+    background-color: #e9ecef;
+    color: #2c3e50;
+    transform: scale(1.1);
+}
+
+.share-qr-img {
+    width: 200px;
+    height: 200px;
+    margin: 15px auto;
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 8px;
 }
 
 .profile-pic-container {
@@ -294,13 +328,38 @@ p {
 
 /* ESTILO DO RODAPÉ COM COPYRIGHT */
 .footer {
-    margin-top: auto; /* Empurra o rodapé para o final da página */
+    margin-top: 30px; /* Espaçamento reduzido conforme solicitado */
     padding: 15px; /* Espaçamento interno */
     text-align: center;
     font-size: 0.8em;
     color: #6c757d; /* Um cinza sutil */
     width: 100%; /* Ocupa a largura total para alinhamento */
     max-width: 320px; /* Limita a largura do texto do rodapé */
+}
+
+.socials-title {
+    margin: 0 0 8px 0;
+    color: #adb5bd; /* Cor discreta e igual aos ícones */
+    font-weight: 500;
+}
+
+.intalog-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.intalog-socials a {
+    color: #adb5bd; /* Cor discreta (cinza claro) */
+    font-size: 1.5em; /* Tamanho dos ícones */
+    transition: color 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.intalog-socials a:hover {
+    color: #6c757d; /* Mais escuro no hover para indicar interatividade */
+    transform: translateY(-2px);
 }
 
 @media (max-width: 480px) {
