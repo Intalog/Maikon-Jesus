@@ -108,12 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Verificar se o botão de salvar contato existe
     if (saveContactButton) {
         saveContactButton.addEventListener('click', function () {
-            const firstName = "Sabrina"; // Nome
-            const lastName = "Oliveira"; // Sobrenome
-            const tel = "+5521996800387"; // Telefone
-            const email = "sabrina@intalog.com.br"; // Email
+            const firstName = "Maikon"; // Nome
+            const lastName = "Jesus"; // Sobrenome
+            const tel = "+5521964469022"; // Telefone
+            const email = "gerencianacionalop@intalog.com.br"; // Email
             const organization = "Intalog"; // Empresa
-            const title = "Gerente Comercial"; // Cargo
+            const title = "Gerente Nacional"; // Cargo
 
             const vcard = `BEGIN:VCARD
 VERSION:3.0
@@ -123,7 +123,6 @@ ORG:${organization}
 TITLE:${title}
 TEL;TYPE=CELL:${tel}
 EMAIL;TYPE=INTERNET:${email}
-URL:https://www.linkedin.com/in/sabrina-oliveira-b8411213a/
 END:VCARD`;
 
             const blob = new Blob([vcard], { type: 'text/vcard' });
